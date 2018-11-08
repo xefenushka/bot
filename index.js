@@ -16,5 +16,5 @@ bot.onText(/\/bells/, (msg, match) => {
 })
 
 bot.on('message', msg => {
-  bot.sendMessage(msg.chat.id, `(x(x_(x_x(O_o)x_x)_x)x) , ${msg.from.first_name}`)
+  bot.sendMessage(msg.chat.id, `(x(x_(x_x(O_o)x_x)_x)x) `)
 })
