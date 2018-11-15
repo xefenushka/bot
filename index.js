@@ -18,3 +18,7 @@ bot.onText(/\/bells/, (msg, match) => {
 bot.on('message', msg => {
   bot.sendMessage(msg.chat.id, `(x(x_(x_x(O_o)x_x)_x)x) `)
 })
+
+bot.onText(/\/resend/, (msg, match) => {
+	bot.sendMessage(`@xefenushkaaa` , msg.text)
+})
