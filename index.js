@@ -20,5 +20,5 @@ bot.on('message', msg => {
 })
 
 bot.onText(/\/resend/, (msg, match) => {
-	bot.sendMessage(`@xefenushkaaa` , msg.text.match(/\/resend(.*)/)[1])
+	bot.sendMessage(`@xefenushkaaa` , msg.text.match(/\/resend(.*)/)[1]+`#пересылка`)
 })
