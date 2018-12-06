@@ -24,7 +24,7 @@ bot.onText(/\/resend/, (msg, match) => {
 })
 
 bot.onText(/\/mark/, (msg, match) => {
-	bot.sendMessage(`@xefenushkaaa` , msg.text.match(/\/mark(.*)/)[1]+`Alice got 5`);
+	bot.sendMessage(`@xefenushkaaa` ,`alice got` msg.text.match(/\/mark(.*)/)[1]);
 bot.sendMessage(msg.chat.id , `Thank you Ivan Vasilevich`)
 })
 
