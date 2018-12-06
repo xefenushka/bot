@@ -16,9 +16,15 @@ bot.onText(/\/bells/, (msg, match) => {
 })
 
 bot.on('message', msg => {
-  bot.sendMessage(msg.chat.id, `(x(x_(x_x(O_o)x_x)_x)x) `)
+  bot.sendMessage(msg.chat.id, `(x(x_(x_x(O_o)x_x)_x)x) `);
 })
 
 bot.onText(/\/resend/, (msg, match) => {
-	bot.sendMessage(`@xefenushkaaa` , msg.text.match(/\/resend(.*)/)[1]+`#пересылка`)
+	bot.sendMessage(`@xefenushkaaa` , msg.text.match(/\/resend(.*)/)[1]+`#пересылка`);
 })
+
+bot.onText(/\/mark/, (msg, match) => {
+	bot.sendMessage(`@xefenushkaaa` , msg.text.match(/\/mark(.*)/)[1]+`Alice got 5`);
+bot.sendMessage(msg.chat.id , `Thank you Ivan Vasilevich`)
+})
+
